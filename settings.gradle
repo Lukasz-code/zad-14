@@ -1,1 +1,3 @@
 rootProject.name = 'kodilla-good-paterns'
+include 'kodilla-spring'
+

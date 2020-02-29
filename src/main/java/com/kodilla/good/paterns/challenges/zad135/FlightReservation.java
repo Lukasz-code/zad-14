@@ -31,7 +31,7 @@ public class FlightReservation {
         List<Flight> flightsThrough = new ArrayList<>();
 
         for (Flight fromFlight : flights)
-            for (Flight toFlight: flights1)
+            for (Flight toFlight : flights1)
 
                 if (fromFlight.getTo().equals(toFlight.getFrom())) {
 
@@ -39,6 +39,9 @@ public class FlightReservation {
                     flightsThrough.add(toFlight);
                 }
 
+        for (Flight through : flightsThrough) {
+            System.out.println("przelot z przesiadka: " + through);
+        }
         return flightsThrough;
     }
 }
